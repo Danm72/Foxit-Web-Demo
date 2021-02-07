@@ -1,0 +1,65 @@
+@import '../variables/index';
+@import '../variables/breakpoints';
+@import '../variables/fonts';
+@import '../variables/other';
+@import '../variables/colors';
+@import '../global';
+
+@import '../components/header';
+@import '../components/hero';
+
+.container-home {
+  padding-top: 75px;
+}
+
+.title {
+  font-size: 88px;
+  line-height: 100px;
+  color: $color-charcoal;
+  margin-top: 0;
+
+  @media (max-width: $breakpoint-l) {
+    font-size: 70px;
+    line-height: 70px;
+  }
+
+  @media (max-width: $breakpoint-m) {
+    font-size: 54px;
+    line-height: 60px;
+  }
+}
+
+.word {
+  color: $color-deep-purple;
+
+  @media (max-width: 419px) {
+    display: none;
+  }
+}
+
+.wordMobile {
+  color: $color-deep-purple;
+  display: none;
+
+  @media (max-width: 419px) {
+    display: initial;
+  }
+}
+
+.paragraph {
+  font-size: 32px;
+  line-height: 44px;
+  margin: 40px 0;
+  color: $color-charcoal;
+
+  @media (max-width: $breakpoint-m) {
+    font-size: 24px;
+    line-height: 24px;
+    width: 80%;
+  }
+
+  @media (max-width: $breakpoint-s) {
+    width: 86%;
+    margin: 30px 0 48px 0;
+  }
+}
